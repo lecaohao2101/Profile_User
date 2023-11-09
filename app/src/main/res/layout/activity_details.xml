@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This line declares the version of the XML file and the UTF-8 character encoding used.-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity"
+    android:orientation="vertical">
+<!-- This is a LinearLayout that contains all the elements in the layout. It has a vertical orientation and occupies the
+entire space of the parent container. The xmlns:app and xmlns:tools attributes are used to define namespaces for using properties
+from the support library (app) and tools (tools).    -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!-- This is a TableLayout, a type of layout used to arrange elements in a table form. It takes up the entire width and has a height that
+adjusts automatically according to the content inside.-->
+        <TableRow>
+            <Button
+                android:id="@+id/button_back"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_back"
+                app:icon="@android:drawable/ic_menu_revert"
+                app:iconSize="40dp"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="312dp"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:orientation="horizontal"
+                android:theme="?attr/actionBarTheme"
+                app:title="            Details"
+                app:titleTextColor="@color/white"
+                tools:layout_editor_absoluteX="1dp"/>
+        </TableRow>
+<!--In TableLayout, there is a TableRow containing two components: a Button and a Toolbar. The button has an ID of button_back and has a
+background image set via the drawable file (drawable/ic_back). The toolbar is given the ID toolbar2 and is customized with a number of
+properties such as background color, minimum height, and title ("Details") set via the app:title attribute-->
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"/>
+<!-- Finally, there is a ListView with ID listView placed on top with a top margin of 30dp. This ListView will contain the list of data items displayed in the Activity.    -->
+</LinearLayout>

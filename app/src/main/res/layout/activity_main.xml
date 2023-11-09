@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--    This line declares the XML version and character encoding used in the file.-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--    This creates a vertical linear layout (a layout that arranges its children elements vertically) that takes up the entire width
+and height of its parent container.-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGBOOK 3"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"/>
+<!--    This creates a TextView widget with the text "LOGBOOK 3". It's positioned with a left margin of 150dp and a top margin of 50dp-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+<!-- This creates another horizontal linear layout with a top margin of 70dp.-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginLeft="20dp"/>
+<!-- This creates a TextView with the text "Name" and a left margin of 20dp.-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="12sp"
+            android:textColor="#FF0000"/>
+<!-- This creates a red asterisk (*) TextView with a smaller font size indicating a required field.-->
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Le Cao Hao"
+            android:layout_marginLeft="27dp"/>
+<!-- This creates an EditText widget with a hint "Le Cao Hao". It's also given an ID for identification in the code "name" and a left margin of 27dp-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+<!-- This creates another horizontal linear layout with a top margin of 20dp.-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB"
+            android:layout_marginLeft="20dp"/>
+<!-- This creates a TextView with the text "DOB" and a left margin of 20dp.-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="12sp"
+            android:textColor="#FF0000"/>
+<!-- This creates a red asterisk (*) TextView with a smaller font size indicating a required field.-->
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="21/01/2002"
+            android:layout_marginLeft="37dp"
+            android:focusable="false"
+            android:inputType="none"/>
+<!-- This creates an EditText widget with a hint "21/01/2002". It's also given an ID for identification in the code "dob" and a left margin of 37dp-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+<!-- This creates another horizontal linear layout with a top margin of 20dp.-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginLeft="20dp"/>
+<!-- This creates a TextView with the text "Email" and a left margin of 20dp.-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textSize="12sp"
+            android:textColor="#FF0000"/>
+<!-- This creates a red asterisk (*) TextView with a smaller font size indicating a required field.-->
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="lecaohao2101@gmail.com"
+            android:layout_marginLeft="30dp"
+            android:inputType="textEmailAddress"/>
+<!-- This creates an EditText widget with a hint "lecaohao2101@gmail.com". It's also given an ID for identification in the code "email" and a left margin of 30dp-->
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+<!-- This creates a RadioGroup, a container for RadioButtons. It has a horizontal orientation and a top margin of 25dp-->
+
+        <RadioButton
+            android:id="@+id/avt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="60dp"
+            android:text="Avatar 1"/>
+<!-- This creates a RadioButton labeled "Avatar 1" with left and right margins.-->
+
+        <RadioButton
+            android:id="@+id/avt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:text="Avatar 2"/>
+<!-- This creates a RadioButton labeled "Avatar 2" with left and right margins.-->
+
+        <RadioButton
+            android:id="@+id/avt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Avatar 3"/>
+<!-- This creates a RadioButton labeled "Avatar 3" with left and right margins.-->
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/avatar1"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:src="@drawable/avatar1"
+            android:layout_marginRight="55dp"/>
+<!-- This is the image used as the user avatar and is taken from my source. This is the avatar1.-->
+
+        <ImageView
+            android:id="@+id/avatar2"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:src="@drawable/avatar2"
+            android:layout_marginRight="50dp"/>
+<!-- This is the image used as the user avatar and is taken from my source. This is the avatar2.-->
+
+        <ImageView
+            android:id="@+id/avatar3"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:src="@drawable/avatar3"/>
+<!-- This is the image used as the user avatar and is taken from my source. This is the avatar3.-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+<!-- This creates another horizontal linear layout with a top margin of 25dp.-->
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE DETAILS"
+            android:layout_marginLeft="13dp"/>
+<!-- This creates a Button widget labeled "SAVE DETAILS" with a left margin of 13dp. The button has an ID for identification in the code.-->
+
+        <Button
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW DETAILS"
+            android:layout_marginLeft="100dp"/>
+<!-- This creates another Button widget labeled "VIEW DETAILS" with a left margin of 100dp. It also has an ID for identification.-->
+    </LinearLayout>
+</LinearLayout>

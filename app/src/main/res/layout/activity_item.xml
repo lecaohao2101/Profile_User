@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This line declares the version of the XML file and the character encoding used.-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/mainLayout">
+<!-- This line creates a horizontal Linear Layout, in which the child components will be aligned horizontally.
+This Linear Layout will take up the entire width and height of the parent container. It is also assigned an ID of
+mainLayout so that it can be identified in the application's Java code.-->
+
+    <ImageView
+        android:id="@+id/avatar_txt"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/avatar1"/>
+<!-- This line creates an ImageView (image) with ID avatar_txt. This ImageView has a width of 100dp and a height of
+120dp and uses an image from a drawable file named avatar1.-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="121dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp">
+<!-- This line creates a vertical LinearLayout with an adjustable width (wrap_content) and a height of 121dp. The child
+components inside it will be arranged vertically. This LinearLayout has a left margin of 20dp.-->
+
+        <TextView
+            android:id="@+id/id_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:text="ID"/>
+<!-- The TextView is created to display ID information, set up with a separate ID and a purple and bold text color.
+This TextView is inside the vertical LinearLayout defined above.-->
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:text="Name"/>
+<!-- The TextView is created to display Name information, set up with a separate Name and a purple and bold text color.
+This TextView is inside the vertical LinearLayout defined above.-->
+
+        <TextView
+            android:id="@+id/dob_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:text="Dob"/>
+<!-- The TextView is created to display DOB information, set up with a separate ID and a purple and bold text color.
+This TextView is inside the vertical LinearLayout defined above.-->
+
+        <TextView
+            android:id="@+id/email_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:text="Email"/>
+<!-- The TextView is created to display Email information, set up with a separate ID and a purple and bold text color.
+This TextView is inside the vertical LinearLayout defined above.-->
+    </LinearLayout>
+</LinearLayout>
